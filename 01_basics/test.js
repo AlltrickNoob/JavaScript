@@ -201,3 +201,127 @@ What does Date.now() return, and how can you get the value in seconds?
 
 // output :- let nowsDate = date.now();
 //           console.log(nowsDate);
+
+
+
+
+
+/*
+Great job attempting all 21 questions! You've clearly studied well and have a solid understanding of core JavaScript topics. Below is your graded test with feedback — where you're correct, and where a bit of improvement is needed.
+
+✅ Correct Answers
+You nailed these completely:
+
+Q1, Q2, Q3, Q4, Q5, Q6, Q8, Q9, Q10, Q13, Q14, Q15, Q16, Q17, Q18, Q20
+
+👏 Excellent! That’s 16 correct out of 21 so far.
+
+❌ Incorrect or Needs Correction
+Here are the ones to revisit:
+
+⚠️ Q7 — Convert 100 to a string and check its length.
+Your answer logic is correct, but you didn’t write the actual output.
+
+js
+Copy
+Edit
+let num = 100;
+let stringVar = String(num);
+console.log(stringVar.length); // ✅ Output: 3
+✅ Just add the output: 3
+
+❌ Q11 — What does +true and +"" return?
+Your output:
+
+1
+false ❌
+
+Correct answer:
+
+js
+Copy
+Edit
+console.log(+true); // 1 ✅
+console.log(+"");   // 0 ✅
+Explanation:
+
++true → 1 (Boolean to number)
+
++"" → 0 (Empty string to number)
+
+❌ Q12 — What will this return: null == 0 and null >= 0
+Your answer:
+
+false
+false ❌
+
+Correct:
+
+js
+Copy
+Edit
+console.log(null == 0);  // false ✅
+console.log(null >= 0);  // true ❌
+Why?
+
+null == 0 → false (no type coercion match)
+
+null >= 0 → true because null is converted to 0 in numeric comparison.
+
+❌ Q19 — Random number between 10 and 20 using Math.random()
+You wrote:
+
+console.log(Math.random()); output: 5.123...
+
+That’s not enough for the question.
+
+✅ Correct approach:
+
+js
+Copy
+Edit
+console.log(Math.floor(Math.random() * (20 - 10 + 1)) + 10);
+// Output: Any number between 10 and 20 inclusive
+❌ Q21 — What does Date.now() return and how to convert to seconds?
+Your answer:
+
+let nowsDate = date.now(); ❌
+console.log(nowsDate);
+
+Mistake: date.now() is incorrect — date is not defined.
+
+✅ Correct usage:
+
+js
+Copy
+Edit
+let nowDate = Date.now(); // Correct static method call
+console.log(nowDate); // milliseconds since Jan 1, 1970
+
+// To get seconds:
+console.log(Math.floor(Date.now() / 1000)); ✅
+✅ Final Score: 16/21
+Correct: 16
+
+Minor fix needed: 2 (Q7, Q19)
+
+Incorrect: 3 (Q11, Q12, Q21)
+
+📝 Summary & Suggestions:
+You're doing great! You understand most fundamentals well.
+
+Focus more on:
+
+Type coercion in comparison (null, undefined)
+
+Date.now() usage
+
+Output formatting (toPrecision, .length, etc.)
+
+Keep practicing small experiments in the console — you’ll master it quickly!
+
+Would you like a next-level test (Intermediate) or want me to quiz you on Functions, Arrays, or Loops next?
+
+Ask ChatGPT
+
+ */

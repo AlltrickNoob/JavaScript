@@ -27,10 +27,12 @@ let myObj = {
     name: "hitesh",
     age: 22,
 }
-
+console.log(myObj);
 const myFunction = function(){
     console.log("Hello world");
+    console.log(myObj.name);
 }
+myFunction()
 
 console.log(typeof anotherId);
 
