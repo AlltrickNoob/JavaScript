@@ -1,26 +1,35 @@
-"use strict"; // treat all JS code as a newer version
-
-// alert( 3 + 3 ) // we are using node.js, not browser
+"use strict";
+// alert(3 + 3) we are in node environment this will work on browser
 
 console.log(3
     +
-    3
-) // code readability should be high
-console.log("Hitesh")
+    3); // code readability should be high
 
-let state;
+    console.log("Ansari");
 
-// number =>2 to the power of 53
-// bigint
-// string = ""
-// boolean => true/false
-// null => standalone value
-// undefined => 
-// symbol => unique
+    let name = 'Abdullah'
+    let age = 23
+    let isStudying = true
+    let state;
 
-// Array = []
-// object = {}
-// function = () {}
+/* 
+undefined = undefined, any variable has not been assigned a value has the value undefined
 
-console.log(typeof undefined); // undefined
-console.log(typeof null); // object
+null = null type of null is object
+
+boolean = true or false
+
+string = "any thing in quotes is string"
+
+number = min Value 1.7976931348623157e+308 max Value5e-324
+
+Symbol = [unique value in square bracket]
+
+BigInt = range of -(2^53 - 1) and 2^53 - 1
+
+Object = {}
+
+*/
+
+console.log(typeof undefined); //undefined
+console.log(typeof null); //object

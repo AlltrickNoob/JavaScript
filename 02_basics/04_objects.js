@@ -1,5 +1,5 @@
-// const tinderUser = new Object()
-const tinderUser = {}
+const tinderUser = new Object()
+// const tinderUser = {} // second way to create object
 
 tinderUser.id = "123abc"
 tinderUser.name = "Sammy"

@@ -15,6 +15,9 @@ console.log("5:",myCreatedDate.toLocaleString());
 let myTimeStamp = Date.now()
 
 console.log("6:",myTimeStamp);
+let toHumanReadable = new Date(myTimeStamp) 
+console.log("6 a :",toHumanReadable.toLocaleString());
+
 console.log("7:",myCreatedDate.getTime());
 console.log("8:",Math.floor(Date.now()/1000));
 
