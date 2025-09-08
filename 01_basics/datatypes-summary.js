@@ -65,11 +65,37 @@
 // number string boolean bigint symbol undefined null
 
 let num = 112
+let bigInt = 9876543210012345678998765432100123456789n
 let str ="ansari"
 let bool = true
-let sym = Symbol['123']
+let sym = Symbol('123')
 let und;
 let nulll = null
 
+console.log(num);
+console.log(bigInt);
+console.log(str);
+console.log(bool);
+console.log(sym);
+console.log(und);
+console.log(nulll);
 
+// Non primitive (reference)
+// Array Object Function
 
+let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+let myObject = {
+    name : "Abdullah",
+    age : "23",
+    std : "MCA FY"
+}
+
+let myFunction = function(){
+    console.log("Hello World");    
+}
+// myFunction()
+
+console.log(myArray);
+console.log(myObject);
+console.log(myFunction());

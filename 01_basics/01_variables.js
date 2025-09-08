@@ -7,6 +7,6 @@ var accountState;
 accountEmail = "abdullah123@gmail.com";
 accountCity = "Kalyan";
 accountState = "Maharashtra";
- console.log(accountId);
- console.table([accountId, accountEmail, accountCity, accountState])
+console.log(accountId);
+console.table([accountId, accountEmail, accountCity, accountState])
   
